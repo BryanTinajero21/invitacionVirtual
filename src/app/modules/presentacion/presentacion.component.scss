@@ -1,0 +1,94 @@
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Imagen centrada */
+.logo-invitacion {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Título de la boda */
+.titulo-boda {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(14px, 2vw, 16px);
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: #3E3F4F;
+}
+
+/* Nombres de la pareja */
+.nombre {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(24px, 3vw, 28px);
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+/* "Y" entre los nombres */
+.nombre-y {
+    font-family: 'Corinthia', cursive;
+    font-size: clamp(30px, 4vw, 36px);
+    font-weight: 700;
+}
+
+/* Mensaje */
+.mensaje {
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(14px, 1.8vw, 15px);
+    margin: 8px 10px;
+    color: #555;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Separador */
+.separador {
+    width: 200px;
+    height: 2px;
+    background-color: #8C3B5D;
+    border: none;
+    margin: 8px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Texto de los padres */
+.companeros {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(12px, 1.6vw, 13px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333;
+    margin-top: 3px;
+}
+
+/* Lista de padres */
+.padres {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3px;
+}
+
+/* Nombres de los padres */
+.nombre-padre {
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(13px, 1.8vw, 15px);
+    margin: 2px 0;
+    text-align: center;
+}
+
+/* Ajuste de filas y columnas */
+.row {
+    margin-bottom: 3px;
+}
+

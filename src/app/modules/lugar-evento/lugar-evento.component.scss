@@ -1,0 +1,20 @@
+/* Fondo del evento */
+.evento-bg {
+    background-color: #f5e6e8; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.accionBoton {
+    background-color: #6A9065; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    width: 185px; /* Ancho fijo */
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+}
