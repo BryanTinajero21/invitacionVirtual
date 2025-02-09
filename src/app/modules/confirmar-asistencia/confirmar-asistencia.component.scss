@@ -2,8 +2,6 @@
 .container {
     padding: 20px;
 }
-
-/* Título */
 .titulo-boda {
     font-family: 'Times New Roman', serif;
     font-size: clamp(14px, 2vw, 16px);
@@ -24,30 +22,13 @@
     margin: 8px auto;
 }
 
-/* Opciones */
-.opciones {
+.accionBoton {
+    background-color: #6A9065; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    width: 185px; /* Ancho fijo */
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
     font-size: 16px;
-    font-weight: bold;
-    margin: 8px auto;
-    text-align: center;
-}
-
-/* Advertencia */
-.alerta {
-    background-color: #dce8d5;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #333;
-    max-width: 85%;
-    margin: auto;
-    font-size: large;
-    line-height: 1.2;
-}
-
-/* Asegurar alineación en móviles */
-@media (max-width: 768px) {
-    .mensaje, .opciones {
-        max-width: 90%;
-    }
+    cursor: pointer;
 }
