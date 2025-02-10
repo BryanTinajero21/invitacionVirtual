@@ -32,13 +32,23 @@
     font-weight: normal;
 }
 
-/* Contenedor con imagen de fondo */
-.mensaje-separador {
+/* Contenedor a ancho completo */
+.mensaje-separador-container {
+    width: 100%;
     background-image: url('/assets/imagenes/fondoPresentacion.svg'); /* Ajusta la ruta */
     background-size: cover;
     background-position: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenido con ancho limitado */
+.mensaje-separador {
     padding: 20px;
     border-radius: 10px;
+    max-width: 80%; /* Controla el ancho del contenido */
+    text-align: center;
 }
 
 /* Mensaje */
@@ -66,16 +76,6 @@
 }
 
 /* Estilos de los nombres de los padres */
-.padres {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.columna-padre {
-    text-align: center;
-}
-
 .nombre-padre {
     font-size: 14px;
     font-weight: bold;
