@@ -1,7 +1,9 @@
+/* Contenedor principal */
 .container {
-    max-width: 400px;
+    max-width: 400px; /* Mantener tamaño compacto */
+    width: 90%; /* Hacerlo adaptable sin ocupar todo */
     margin: auto;
-    padding: 20px;
+    padding: 5px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -9,75 +11,110 @@
 
 /* Imagen de logo */
 .logo-invitacion {
-    width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Estilo del título */
-.titulo-boda .descripcion {
+.titulo-boda {
+    margin-top: -45px; /* Subir más */
+}
+
+.descripcion {
+    font-family: 'Times New Roman';
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
+    letter-spacing: 5px;
     color: #555;
+    margin: 0;
 }
 
 .titulo-boda .nombre {
-    font-family: 'Corinthia', cursive;
-    font-size: 36px;
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 32px;
     color: #333;
 }
 
-.nombre-y {
-    font-size: 24px;
-    font-weight: normal;
-}
-
-/* Contenedor a ancho completo */
+/* Contenedor con imagen de fondo */
 .mensaje-separador-container {
     width: 100%;
-    background-image: url('/assets/imagenes/fondoPresentacion.svg'); /* Ajusta la ruta */
+    background-image: url('/assets/imagenes/fondoPresentacion.svg');
     background-size: cover;
     background-position: center;
-    padding: 40px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
+    margin-top: -35px; /* Subir más */
 }
 
-/* Contenido con ancho limitado */
+/* Contenido del mensaje */
 .mensaje-separador {
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
-    max-width: 80%; /* Controla el ancho del contenido */
+    max-width: 75%;
     text-align: center;
 }
 
 /* Mensaje */
 .mensaje {
-    font-size: 14px;
-    font-style: italic;
-    color: #666;
+    font-size: 16px;
+    font-family: 'Crimson Text';
+    line-height: 1;
+    margin: 0;
 }
 
 /* Línea separadora */
 .separador {
-    width: 50%;
-    margin: 10px auto;
-    border-top: 1px solid #ccc;
+    width: 200px;
+    height: 2px;
+    background-color: #EDDBDB;
+    margin: 8px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Texto de "En compañía de nuestros padres" */
 .companeros {
-    font-size: 14px;
+    font-family: 'Times New Roman';
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #555;
-    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #333;
 }
 
-/* Estilos de los nombres de los padres */
+/* Sección de padres con separador en medio */
+.texto {
+    margin: 0;
+    padding: 0;
+}
+
+.padre-container {
+    display: flex;
+    margin-top: -10px; /* Subir más */
+}
+
+.columna-padre {
+    width: 45%;
+}
+
+.separador-vertical {
+    width: 1px;
+    height: 40px;
+    background-color: #EDDBDB;
+    margin: 0 15px;
+}
+
 .nombre-padre {
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
+    font-family: 'Diphylleia';
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0; /* Quitar el margen general */
+    margin-bottom: 8px; /* Añadir un espacio entre los párrafos */
+}
+
+.nombre-y {
+    font-family: 'Corinthia';
 }
