@@ -1,9 +1,27 @@
-/* Contenedor general */
-.container {
-    padding: 20px;
+/* Contenedor con imagen de fondo */
+.mensaje-separador-container {
+    width: 100%;
+    background-image: url('/assets/imagenes/fondoVestimenta.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 10px 0;
 }
 
-/* Título */
+/* Contenido del mensaje */
+.mensaje-separador {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center;
+    margin-top: -90px;
+}
+
+/* Título Código de vestimenta */
 .titulo-boda {
     font-family: 'Times New Roman', serif;
     font-size: clamp(14px, 2vw, 16px);
@@ -11,43 +29,53 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #3E3F4F;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 5px; /* Reducir espacio debajo del título */
 }
 
 /* Mensaje */
 .mensaje {
-    font-family: 'Crimson Text', serif;
-    font-size: clamp(14px, 1.8vw, 15px);
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     color: #555;
-    line-height: 1.2;
-    text-align: center;
-    margin: 8px auto;
+    margin: 5px 0; /* Reducir el margen superior e inferior */
+    line-height: 1.3; /* Ajustar el interlineado para reducir el espacio entre líneas */
+}
+
+/* Compañeros */
+.companeros {
+    font-size: 16px;
+    font-family: 'Crimson Text';
+    color: #333;
+    margin-top: 5px; /* Reducir espacio superior */
+    margin-bottom: 5px; /* Reducir espacio inferior */
+}
+
+.opciones-container {
+    margin-top: -130px; /* Ajustar margen superior para acercarlo */
 }
 
 /* Opciones */
 .opciones {
+    font-family: 'Crimson Text';
     font-size: 16px;
-    font-weight: bold;
-    margin: 8px auto;
     text-align: center;
+    margin: 8px auto;
 }
 
-/* Advertencia */
+
+/* Alerta */
 .alerta {
     background-color: #dce8d5;
+    font-family: 'Crimson Text';
+    font-size: 14px;
     padding: 10px;
     border-radius: 8px;
-    font-size: 14px;
     color: #333;
     max-width: 85%;
     margin: auto;
-    font-size: large;
     line-height: 1.2;
-}
-
-/* Asegurar alineación en móviles */
-@media (max-width: 768px) {
-    .mensaje, .opciones {
-        max-width: 90%;
-    }
+    margin-bottom: 5px;
 }

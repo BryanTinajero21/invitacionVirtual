@@ -1,20 +1,73 @@
 /* Fondo del evento */
 .evento-bg {
-    background-color: #f5e6e8; /* Color de fondo */
+    background-color: #F6EEEE; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: auto;
+    padding-top: 50px;
 }
 
+/* Contenedor para la imagen de fondo */
+.logo-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 200px; /* Aumentamos la altura del contenedor para que la imagen de fondo sea más grande */
+    background-image: url('/assets/imagenes/fondoEvento.svg');
+    background-size: 150%; /* Aumentamos el tamaño de la imagen de fondo para que sea más grande */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Esto permite posicionar elementos encima */
+}
+
+/* Imagen del lugar del evento */
+.lugar-evento {
+    width: 70%; /* Ajustamos el tamaño de la imagen del lugar */
+    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    display: block;
+    position: absolute; /* La imagen estará encima de la imagen de fondo */
+    top: 50%; /* Centra la imagen del lugar verticalmente */
+    left: 50%; /* Centra la imagen del lugar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que esté perfectamente centrada */
+}
+
+/* Título */
+.titulo-boda {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 5px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+/* Descripción del Evento */
+.titulo {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Botón de acción */
 .accionBoton {
     background-color: #6A9065; /* Color de fondo */
-    color: white; /* Color del texto */
+    color: white;
     border: none;
-    width: 185px; /* Ancho fijo */
+    width: 185px;
     padding: 10px 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Estilo para los botones */
+.accionBoton:hover {
+    background-color: #556c54; /* Efecto hover */
 }

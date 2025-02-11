@@ -1,34 +1,103 @@
-/* Contenedor general */
-.container {
+.asistencia {
+    background-color: #F6EEEE;
+    /* Color de fondo */
     padding: 20px;
-}
-.titulo-boda {
-    font-family: 'Times New Roman', serif;
-    font-size: clamp(14px, 2vw, 16px);
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #3E3F4F;
-    margin-top: 10px;
-}
-
-/* Mensaje */
-.mensaje {
-    font-family: 'Crimson Text', serif;
-    font-size: clamp(14px, 1.8vw, 15px);
-    color: #555;
-    line-height: 1.2;
+    /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 8px auto;
+    margin: auto;
+    padding-top: 50px;
 }
 
+.titulo-boda {
+    margin-top: -30px;
+}
+
+.descripcion {
+    font-family: 'Times New Roman';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+/* Contenedor con imagen de fondo */
+.mensaje-separador-container {
+    width: 100%;
+    background-image: url('/assets/imagenes/fondoAsistencia.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Botón de acción */
 .accionBoton {
-    background-color: #6A9065; /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: #6A9065;
+    /* Color de fondo */
+    color: white;
     border: none;
-    width: 185px; /* Ancho fijo */
-    padding: 10px 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    width: 185px;
+    padding: 5px 20px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
 }
+
+/* Estilo para los botones */
+.accionBoton:hover {
+    background-color: #556c54;
+    /* Efecto hover */
+}
+
+/* Contenido del mensaje */
+.mensaje-separador {
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 75%;
+    text-align: center;
+}
+
+.mensaje {
+    font-size: 16px;
+    font-family: 'Crimson Text';
+    line-height: 1;
+    text-align: justify
+}
+
+.companeros {
+    font-size: 20px;
+    font-family: 'Urbanist';
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.mensaje-principal {
+    margin-top: 5%;
+    font-size: 16px;
+    font-family: 'Urbanist';
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.mensaje-secundario {
+    margin-top: 5%;
+    font-size: 12px;
+    font-family: 'Urbanist';
+    line-height: 1;
+    letter-spacing: 2px;
+    color: #1D1D1B;
+}
+
+.columna-padre {
+    max-width: 90%; /* Ajusta el porcentaje según lo necesites */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+
