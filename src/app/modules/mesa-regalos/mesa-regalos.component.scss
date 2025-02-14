@@ -1,0 +1,73 @@
+.regalos {
+    /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.mensaje-separador-container {
+    width: 100%;
+    background-image: url('/assets/imagenes/fondoPresentacion.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Subir más */
+}
+
+/* Contenido del mensaje */
+.mensaje-separador {
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Estilo del título */
+.titulo-boda {
+    margin-top: 15px; /* Subir más */
+}
+
+.descripcion {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.mesas-regalos {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.mesa {
+    text-align: center;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.mesa img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.mesa:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Línea separadora */
+.separador {
+    width: 200px;
+    height: 2px;
+    background-color: #EDDBDB;
+    margin: 8px auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}

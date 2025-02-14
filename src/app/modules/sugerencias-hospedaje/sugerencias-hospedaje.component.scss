@@ -1,0 +1,57 @@
+.descripcion {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del contenedor principal */
+.regalos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor-hospedajes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de cada tarjeta */
+.card-hospedaje {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+/* Estilo del texto del hotel */
+.nombre-hotel {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del botón */
+.boton-ver {
+    background-color: #5A7D58;
+    color: white;
+    border: none;
+    padding: 5px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.boton-ver:hover {
+    background-color: #466144;
+}

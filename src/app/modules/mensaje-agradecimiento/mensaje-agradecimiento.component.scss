@@ -1,0 +1,23 @@
+/* Contenedor del mensaje de despedida */
+.mensaje-despedida {
+    background-color: #F6EEEE;
+    background-image: url('/assets/imagenes/fondoMensaje.svg'); /* Imagen de fondo con hojas */
+    background-size: contain;  /* Ajusta la imagen al contenedor */
+    background-position: bottom center; /* Mueve la imagen más abajo */
+    background-repeat: no-repeat; /* Evita que se repita */
+    padding: 50px 20px 70px; /* Aumenta padding abajo para más espacio */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del mensaje de texto */
+.mensaje-texto {
+    font-family: Crimson Text;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 600px;
+    margin-bottom: 60px; 
+    margin-top: -20px;
+}
