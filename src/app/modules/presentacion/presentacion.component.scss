@@ -1,5 +1,5 @@
-/* Contenedor principal */
 .container {
+    max-width: 100%; /* Ocupar todo el ancho disponible */
     width: 100%; /* Mantener un margen en los costados */
     margin: auto;
     padding: 0px;
@@ -8,38 +8,112 @@
     border-radius: 10px;
 }
 
-/* Logo responsivo */
+/* Imagen de logo */
 .logo-invitacion {
-    max-width: 80%;
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Mensaje con imagen de fondo */
+/* Estilo del título */
+.titulo-boda {
+    margin-top: 15px; /* Subir más */
+}
+
+.descripcion {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #555;
+    margin: 0;
+}
+
+.titulo-boda .nombre {
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Contenedor con imagen de fondo */
 .mensaje-separador-container {
-    background-size: contain; /* Ajustar mejor la imagen */
-    padding: 20px 10px;
+    width: 100%;
+    background-image: url('/assets/imagenes/fondoPresentacion.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -35px; /* Subir más */
 }
 
-/* Texto de mensaje */
+/* Contenido del mensaje */
+.mensaje-separador {
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 75%;
+    text-align: center;
+}
+
+/* Mensaje */
 .mensaje {
-    font-size: 14px; /* Reducir tamaño para celulares */
+    font-size: 16px;
+    font-family: 'Crimson Text';
+    line-height: 1;
+    margin: 0;
 }
 
 /* Línea separadora */
 .separador {
-    width: 80%; /* Ajustar a la pantalla */
+    width: 200px;
+    height: 2px;
+    background-color: #EDDBDB;
+    margin: 8px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-/* Contenedor de padres */
+/* Texto de "En compañía de nuestros padres" */
+.companeros {
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #333;
+}
+
+/* Sección de padres con separador en medio */
+.texto {
+    margin: 0;
+    padding: 0;
+}
+
 .padre-container {
-    flex-direction: column; /* Hacerlo en columna en pantallas pequeñas */
-    align-items: center;
-    text-align: center;
+    display: flex;
+    margin-top: -10px; /* Subir más */
 }
 
-/* Quitar separador vertical en celular */
-@media (max-width: 600px) {
-    .separador-vertical {
-        display: none;
-    }
+.columna-padre {
+    width: 45%;
+}
+
+.separador-vertical {
+    width: 1px;
+    height: 40px;
+    background-color: #EDDBDB;
+    margin: 0 15px;
+}
+
+.nombre-padre {
+    font-family: 'Diphylleia';
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0; /* Quitar el margen general */
+    margin-bottom: 8px; /* Añadir un espacio entre los párrafos */
+}
+
+.nombre-y {
+    font-family: 'Corinthia';
 }
