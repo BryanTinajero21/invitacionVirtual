@@ -1,13 +1,9 @@
 /* Contenedor principal */
 .container {
-    width: 95%; /* Se ajusta al ancho de la pantalla */
-    max-width: 500px; /* Permitir un poco más de espacio en pantallas grandes */
-    min-width: 320px; /* Evitar que sea demasiado pequeño */
-    margin: auto;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    max-width: 400px; /* Máximo 400px en celulares pequeños */
+    min-width: 320px; /* No se hace demasiado pequeño */
     padding: 0px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 /* Imagen de logo */
@@ -45,7 +41,7 @@
     background-image: url('/assets/imagenes/fondoPresentacion.svg');
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     margin-top: -35px; /* Subir más */
@@ -118,4 +114,11 @@
 
 .nombre-y {
     font-family: 'Corinthia';
+}
+
+/* Ajuste para pantallas más grandes (tablets, iPhone 15 Pro Max, etc.) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px; /* Crece en pantallas grandes */
+    }
 }
