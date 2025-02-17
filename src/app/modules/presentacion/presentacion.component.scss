@@ -1,9 +1,13 @@
 /* Contenedor principal */
 .container {
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    max-width: 400px; /* Máximo 400px en celulares pequeños */
+    max-width: 400px; /* Mantener tamaño compacto */
     min-width: 320px; /* No se hace demasiado pequeño */
+    width: 100%; /* Hacerlo adaptable sin ocupar todo */
+    margin: auto;
     padding: 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Imagen de logo */
@@ -21,18 +25,19 @@
 
 .descripcion {
     font-family: 'Times New Roman';
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #555;
+    color: #3E3F4F;
     margin: 0;
 }
 
-.titulo-boda .nombre {
+.nombre {
     font-family: 'Times New Roman';
     text-transform: uppercase;
-    font-size: 32px;
-    color: #333;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #3E3F4F;
 }
 
 /* Contenedor con imagen de fondo */
@@ -77,9 +82,9 @@
 .companeros {
     font-family: 'Times New Roman';
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 5px;
-    color: #333;
+    color: #3E3F4F;
 }
 
 /* Sección de padres con separador en medio */
@@ -94,10 +99,11 @@
 }
 
 .columna-padre {
-    width: 45%;
+    width: 50%;   
 }
 
 .separador-vertical {
+
     width: 1px;
     height: 40px;
     background-color: #EDDBDB;
@@ -106,10 +112,27 @@
 
 .nombre-padre {
     font-family: 'Diphylleia';
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1;
     margin: 0; /* Quitar el margen general */
     margin-bottom: 8px; /* Añadir un espacio entre los párrafos */
+    padding-left: 60px; /* Menos espacio en el lado izquierdo */
+}
+
+.nombre-madre {
+    font-family: 'Diphylleia';
+    font-size: 16px;
+    line-height: 1;
+    margin: 0; /* Quitar el margen general */
+    margin-bottom: 8px; /* Añadir un espacio entre los párrafos */
+    padding-right: 50px; /* Menos espacio en el lado izquierdo */
+}
+
+.primer-letra {
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #3E3F4F;
 }
 
 .nombre-y {
@@ -119,6 +142,6 @@
 /* Ajuste para pantallas más grandes (tablets, iPhone 15 Pro Max, etc.) */
 @media (min-width: 768px) {
     .container {
-        max-width: 900px; /* Crece en pantallas grandes */
+        max-width: 600px; /* Crece en pantallas grandes */
     }
 }

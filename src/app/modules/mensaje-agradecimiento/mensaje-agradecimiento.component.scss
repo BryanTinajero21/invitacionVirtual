@@ -1,7 +1,7 @@
 /* Contenedor del mensaje de despedida */
 .mensaje-despedida {
     background-color: #F6EEEE;
-    background-image: url('/assets/imagenes/fondoMensaje.svg'); /* Imagen de fondo con hojas */
+    background-image: url('/assets/imagenes/fondoMensaje.png'); /* Imagen de fondo con hojas */
     background-size: contain;  /* Ajusta la imagen al contenedor */
     background-position: bottom center; /* Mueve la imagen más abajo */
     background-repeat: no-repeat; /* Evita que se repita */
@@ -14,7 +14,7 @@
 
 /* Estilo del mensaje de texto */
 .mensaje-texto {
-    font-family: Crimson Text;
+    font-family: 'Coustard';
     font-size: 18px;
     font-weight: 500;
     max-width: 600px;

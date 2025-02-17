@@ -1,19 +1,18 @@
 .asistencia {
     background-color: #F6EEEE;
-    /* Color de fondo */
     padding: 20px;
-    /* Espaciado interno */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: auto;
     padding-top: 50px;
+    width: 100%;
 }
 
 .titulo-boda {
     margin-top: -30px;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
 }
 
 .descripcion {
@@ -21,7 +20,6 @@
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 5px;
-   
 }
 
 /* Contenedor con imagen de fondo */
@@ -30,6 +28,7 @@
     background-image: url('/assets/imagenes/fondoAsistencia.svg');
     background-size: cover;
     background-position: center;
+    background-size: 100%; /* Aumenta el tamaño de la imagen */
     padding: 68px 0;
     display: flex;
     justify-content: center;
@@ -37,6 +36,7 @@
 
 /* Botón de acción */
 .accionBoton {
+    margin-top: -10px;
     background-color: #6A9065;
     /* Color de fondo */
     color: white;
@@ -63,7 +63,7 @@
 }
 
 .mensaje {
-    margin-top: -30px;
+    margin-top: -50px;
     font-size: 19px;
     font-family: 'Crimson Text';
     line-height: 1;
@@ -76,10 +76,11 @@
     font-family: 'Urbanist';
     line-height: 1;
     text-transform: uppercase;
+    font-weight: medium;
 }
 
 .mensaje-principal {
-    margin-top: 5%;
+    margin-top: 5px;
     font-size: 20px;
     font-family: 'Urbanist';
     line-height: 1;
