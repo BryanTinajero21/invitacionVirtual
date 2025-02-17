@@ -13,6 +13,7 @@
 
 .titulo-boda {
     margin-top: -30px;
+    margin-bottom: -20px;
 }
 
 .descripcion {
@@ -20,7 +21,7 @@
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin: 0;
+   
 }
 
 /* Contenedor con imagen de fondo */
@@ -29,10 +30,9 @@
     background-image: url('/assets/imagenes/fondoAsistencia.svg');
     background-size: cover;
     background-position: center;
-    padding: 30px 0;
+    padding: 68px 0;
     display: flex;
     justify-content: center;
-
 }
 
 /* Botón de acción */
@@ -63,13 +63,15 @@
 }
 
 .mensaje {
-    font-size: 16px;
+    margin-top: -30px;
+    font-size: 19px;
     font-family: 'Crimson Text';
     line-height: 1;
     text-align: justify
 }
 
 .companeros {
+    margin-bottom: 40px;
     font-size: 20px;
     font-family: 'Urbanist';
     line-height: 1;
@@ -78,7 +80,7 @@
 
 .mensaje-principal {
     margin-top: 5%;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Urbanist';
     line-height: 1;
     text-transform: uppercase;
@@ -87,8 +89,8 @@
 }
 
 .mensaje-secundario {
-    margin-top: 5%;
-    font-size: 12px;
+    margin-top: 5px;
+    font-size: 14px;
     font-family: 'Urbanist';
     line-height: 1;
     letter-spacing: 2px;
@@ -98,6 +100,10 @@
 .columna-padre {
     max-width: 90%; /* Ajusta el porcentaje según lo necesites */
     margin: 0 auto; /* Centra el contenido */
+}
+
+.texto-container {
+    margin-top: -50px;
 }
 
 

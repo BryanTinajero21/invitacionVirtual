@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
-    padding: 10px 0;
+    min-height: 400px;
+    margin-top: -30px; /* Sube la imagen */
 }
 
 /* Contenido del mensaje */
@@ -18,7 +18,7 @@
     border-radius: 10px;
     max-width: 80%;
     text-align: center;
-    margin-top: -90px;
+    margin-top: -130px;
 }
 
 /* Título Código de vestimenta */
@@ -30,23 +30,22 @@
     text-transform: uppercase;
     color: #3E3F4F;
     margin-top: 0;
-    margin-bottom: 5px; /* Reducir espacio debajo del título */
+    margin-bottom:50px; /* Reducir espacio debajo del título */
 }
 
 /* Mensaje */
 .mensaje {
     font-family: 'Times New Roman';
-    font-size: 16px;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #555;
-    margin: 5px 0; /* Reducir el margen superior e inferior */
     line-height: 1.3; /* Ajustar el interlineado para reducir el espacio entre líneas */
 }
 
 /* Compañeros */
 .companeros {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Crimson Text';
     color: #333;
     margin-top: 5px; /* Reducir espacio superior */
@@ -54,7 +53,7 @@
 }
 
 .opciones-container {
-    margin-top: -130px; /* Ajustar margen superior para acercarlo */
+    margin-top: -180px; /* Ajustar margen superior para acercarlo */
 }
 
 /* Opciones */

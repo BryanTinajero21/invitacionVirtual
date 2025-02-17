@@ -10,17 +10,14 @@
 }
 /* Contenedor de la imagen con fondo */
 .imagen-container {
-    width: 100%;
-    max-width: 700px; /* Límite para pantallas grandes */
+    width: 90%;
     height: 250px; /* Ajusta la altura para que no empuje el título */
     background-image: url('/assets/imagenes/lugarEvento.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px; /* Opcional, para bordes más estéticos */
-    margin-top: -40px; /* Sube la imagen */
+    margin-top: -20px; /* Sube la imagen */
     position: relative;
-
 }
 
 /* Título principal "LUGAR DEL EVENTO" */
@@ -32,7 +29,6 @@
     letter-spacing: 2px;
     margin-bottom: 40px; /* Asegura separación del fondo */
     position: relative;
-    z-index: 1; /* Hace que el título quede arriba */
 }
 
 
@@ -46,7 +42,7 @@
 
 /* Texto "Jardín de Eventos" más pegado a la imagen */
 .titulo {
-    margin-top: -60px;
+    margin-top: -40px;
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     color: #666;

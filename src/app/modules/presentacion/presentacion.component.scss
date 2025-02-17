@@ -1,6 +1,8 @@
+/* Contenedor principal */
 .container {
-    max-width: 100%; /* Ocupar todo el ancho disponible */
-    width: 100%; /* Mantener un margen en los costados */
+    width: 95%; /* Se ajusta al ancho de la pantalla */
+    max-width: 500px; /* Permitir un poco más de espacio en pantallas grandes */
+    min-width: 320px; /* Evitar que sea demasiado pequeño */
     margin: auto;
     padding: 0px;
     background-color: white;
@@ -43,7 +45,7 @@
     background-image: url('/assets/imagenes/fondoPresentacion.svg');
     background-size: cover;
     background-position: center;
-    padding: 10px 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     margin-top: -35px; /* Subir más */
