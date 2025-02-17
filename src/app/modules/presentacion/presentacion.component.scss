@@ -1,13 +1,9 @@
 /* Contenedor principal */
 .container {
+    width: 100%; /* Hacerlo adaptable sin ocupar todo */
     max-width: 400px; /* Mantener tamaño compacto */
     min-width: 320px; /* No se hace demasiado pequeño */
-    width: 100%; /* Hacerlo adaptable sin ocupar todo */
-    margin: auto;
     padding: 0px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 /* Imagen de logo */
@@ -103,7 +99,6 @@
 }
 
 .separador-vertical {
-
     width: 1px;
     height: 40px;
     background-color: #EDDBDB;
